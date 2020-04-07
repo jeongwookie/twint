@@ -101,7 +101,7 @@ def _output(obj, output, config, **extra):
     else:
         if not config.Hide_output:
             try:
-                print(output.replace('\n', ' '))
+                #print(output.replace('\n', ' '))
             except UnicodeEncodeError:
                 logme.critical(__name__+':_output:UnicodeEncodeError')
                 print("unicode error [x] output._output")
